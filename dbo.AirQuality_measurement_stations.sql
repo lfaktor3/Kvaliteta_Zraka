@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[AirQuality_measurement_stations]
+(
+	[MEASUREMENT_STATION_ID] INT NOT NULL PRIMARY KEY, 
+    [MEASUREMENT_STATION_NAME] TEXT NULL
+)
