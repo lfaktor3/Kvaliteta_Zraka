@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kvaliteta_Zraka
+namespace CRUD
 {
-   public class Pollutant
+    public class Pollutants
     {
         public int POLLUTANT_ID { get; set; }
         public string POLLUTANT_NAME { get; set; }
