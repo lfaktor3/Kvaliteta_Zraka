@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUD", "CRUD\CRUD.csproj", "{4EF7FAF4-645D-4259-9D66-57AEFE153DF5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{A84C216A-206B-4506-9425-6C8B0C05A39A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KvalitetaZrakaForm", "KvalitetaZrakaForm\KvalitetaZrakaForm.csproj", "{BCBF26F4-FF25-45F8-A96A-9736E6A8109E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{4EF7FAF4-645D-4259-9D66-57AEFE153DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EF7FAF4-645D-4259-9D66-57AEFE153DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EF7FAF4-645D-4259-9D66-57AEFE153DF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A84C216A-206B-4506-9425-6C8B0C05A39A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A84C216A-206B-4506-9425-6C8B0C05A39A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A84C216A-206B-4506-9425-6C8B0C05A39A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A84C216A-206B-4506-9425-6C8B0C05A39A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCBF26F4-FF25-45F8-A96A-9736E6A8109E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCBF26F4-FF25-45F8-A96A-9736E6A8109E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCBF26F4-FF25-45F8-A96A-9736E6A8109E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCBF26F4-FF25-45F8-A96A-9736E6A8109E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
