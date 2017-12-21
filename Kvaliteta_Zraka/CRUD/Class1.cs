@@ -27,8 +27,7 @@ namespace CRUD
             webresponse.Close();
             return result;
         }
-
-
+        
 
         public List<MeasurementStation> GetAllMeasurementStations()
         {
@@ -80,3 +79,6 @@ namespace CRUD
         }
     }
 }
+
+/*kreirati link i prikazati rezultate u datagridview*/
+/*tip podatka samo dnevni validirani podaci*/
