@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.mEASUREMENTSTATIONIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,7 +47,9 @@
             this.dotNetDataSet1 = new KvalitetaZrakaForm.DotNetDataSet1();
             this.airQuality_measurement_stationsTableAdapter = new KvalitetaZrakaForm.DotNetDataSetTableAdapters.AirQuality_measurement_stationsTableAdapter();
             this.airQuality_pollutantsTableAdapter = new KvalitetaZrakaForm.DotNetDataSet1TableAdapters.AirQuality_pollutantsTableAdapter();
+            this.generate = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.airQualitymeasurementstationsBindingSource)).BeginInit();
@@ -64,18 +68,37 @@
             this.tabControl1.Location = new System.Drawing.Point(13, 13);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(528, 288);
+            this.tabControl1.Size = new System.Drawing.Size(528, 322);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.generate);
+            this.tabPage1.Controls.Add(this.dateTimePicker2);
+            this.tabPage1.Controls.Add(this.dateTimePicker1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(520, 262);
+            this.tabPage1.Size = new System.Drawing.Size(520, 296);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Mjerni rezultati";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(314, 6);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker2.TabIndex = 7;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(6, 6);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 6;
             // 
             // tabPage2
             // 
@@ -83,7 +106,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(520, 262);
+            this.tabPage2.Size = new System.Drawing.Size(520, 296);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mjerne postaje";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -131,7 +154,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(520, 262);
+            this.tabPage3.Size = new System.Drawing.Size(520, 296);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Onečišćujuće tvari";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -181,16 +204,27 @@
             // 
             this.airQuality_pollutantsTableAdapter.ClearBeforeFill = true;
             // 
+            // generate
+            // 
+            this.generate.Location = new System.Drawing.Point(223, 7);
+            this.generate.Name = "generate";
+            this.generate.Size = new System.Drawing.Size(75, 23);
+            this.generate.TabIndex = 8;
+            this.generate.Text = "Prikaži";
+            this.generate.UseVisualStyleBackColor = true;
+            this.generate.Click += new System.EventHandler(this.generate_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(553, 313);
+            this.ClientSize = new System.Drawing.Size(553, 347);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Kvaliteta Zraka";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.airQualitymeasurementstationsBindingSource)).EndInit();
@@ -221,6 +255,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn mEASUREMENTSTATIONNAMEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pOLLUTANTIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pOLLUTANTNAMEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button generate;
     }
 }
 
